@@ -1,0 +1,7 @@
+../Core/Src/circbuff.c:3:6:circbuff_init	16	static
+../Core/Src/circbuff.c:10:6:circbuff_is_empty	24	static
+../Core/Src/circbuff.c:15:6:circbuff_is_full	16	static
+../Core/Src/circbuff.c:20:6:circbuff_write	16	static
+../Core/Src/circbuff.c:34:6:circbuff_read	16	static
+../Core/Src/circbuff.c:46:6:circbuff_peek	16	static
+../Core/Src/circbuff.c:54:6:circbuff_clear	16	static

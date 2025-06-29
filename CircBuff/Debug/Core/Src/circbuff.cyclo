@@ -1,0 +1,7 @@
+../Core/Src/circbuff.c:3:6:circbuff_init	1
+../Core/Src/circbuff.c:10:6:circbuff_is_empty	3
+../Core/Src/circbuff.c:15:6:circbuff_is_full	1
+../Core/Src/circbuff.c:20:6:circbuff_write	3
+../Core/Src/circbuff.c:34:6:circbuff_read	2
+../Core/Src/circbuff.c:46:6:circbuff_peek	2
+../Core/Src/circbuff.c:54:6:circbuff_clear	1
