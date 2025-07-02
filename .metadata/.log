@@ -19,3 +19,18 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Projects\Codi
 
 !ENTRY org.eclipse.cdt.ui 4 0 2025-06-29 19:37:50.661
 !MESSAGE Cannot work without definition
+!SESSION 2025-07-02 20:29:41.696 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ZA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-07-02 20:29:53.773
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-07-02 20:29:53.776
+!MESSAGE Log4j2 initialized with config file C:\Projects\Coding Files\C\Circular Buffer\CircularBuffer\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-07-02 20:30:06.924
+!MESSAGE Started RMI Server, listening on port 41337
