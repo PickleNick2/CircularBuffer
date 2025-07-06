@@ -9,9 +9,9 @@
 
 typedef struct {
 	uint8_t buffer[CIRCBUFF_SIZE];
-	uint16_t head;
-	uint16_t tail;
-	bool full;
+	volatile uint16_t head;
+	volatile uint16_t tail;
+	volatile bool full;
 
 } CircularBuffer;
 

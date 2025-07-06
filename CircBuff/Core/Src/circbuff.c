@@ -1,9 +1,11 @@
 #include "circbuff.h"
+#include <string.h>
 
 void circbuff_init(CircularBuffer *circbuff){
 	circbuff->head = 0;
 	circbuff->tail = 0;
 	circbuff->full = false;
+	memset(circbuff->buffer, 0, CIRCBUFF_SIZE);
 }
 
 
@@ -35,6 +37,7 @@ bool circbuff_read(CircularBuffer *circbuff, uint8_t *data){
 	if (circbuff_is_empty(circbuff)){
 		return false;
 	}
+
 	*data = circbuff->buffer[circbuff->tail];
 	circbuff->tail = (circbuff->tail + 1) % CIRCBUFF_SIZE;
 	circbuff->full = false;

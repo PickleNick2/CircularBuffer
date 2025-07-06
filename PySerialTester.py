@@ -20,7 +20,8 @@ def send_bytes(ser: serial):
 def send_and_read(ser: serial):
     try:
         while True:
-            ser.write(b'Hello, Serial Port!\n')
+            # ser.write(b'Hello, Serial Port!\n')
+            ser.write(b'Another, message here!\n')
             print("Data written to serial port.")
             
             buffer_response = ser.readline()

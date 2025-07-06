@@ -44,6 +44,8 @@ UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 CircularBuffer uart_rx_buff;
+//Testing byte
+uint8_t rxByte;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -92,12 +94,20 @@ circbuff_init(&uart_rx_buff);
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
+  // UART comms established test code
+  HAL_UART_Receive_IT(&huart1, &rxByte, 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+	  if(circbuff_read(&uart_rx_buff, &rxByte)){
+
+		  HAL_UART_Transmit(&huart1, &rxByte, 1, HAL_MAX_DELAY);
+
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -440,7 +450,16 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
+	if (huart -> Instance == USART1){
 
+		if (!circbuff_write(&uart_rx_buff, rxByte)){
+			//Overflow
+		}
+//		HAL_UART_Transmit(&huart1, &rxByte, 1, HAL_MAX_DELAY);
+		HAL_UART_Receive_IT(&huart1, &rxByte, 1);
+	}
+}
 /* USER CODE END 4 */
 
 /**
