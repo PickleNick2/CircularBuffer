@@ -1,7 +1,6 @@
 #include "circbuff.h"
 #include <string.h>
 
-//Initialise circular buffer
 void circbuff_init(CircularBuffer *circbuff){
 	circbuff->head = 0;
 	circbuff->tail = 0;
@@ -21,7 +20,6 @@ bool circbuff_is_full(CircularBuffer *circbuff){
 
 
 bool circbuff_write(CircularBuffer *circbuff, uint8_t data){
-
 	if (circbuff->full){
 		return false; //Buffer overflow
 	}
@@ -32,12 +30,10 @@ bool circbuff_write(CircularBuffer *circbuff, uint8_t data){
 	if (circbuff->head == circbuff->tail){
 		circbuff->full = true;
 	}
-
 	return true;
 }
 
 bool circbuff_read(CircularBuffer *circbuff, uint8_t *data){
-
 	if (circbuff_is_empty(circbuff)){
 		return false;
 	}

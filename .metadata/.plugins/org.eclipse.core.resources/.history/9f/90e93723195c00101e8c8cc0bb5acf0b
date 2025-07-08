@@ -46,7 +46,6 @@ UART_HandleTypeDef huart1;
 CircularBuffer uart_rx_buff;
 //Testing byte
 uint8_t rxByte;
-uint8_t txByte;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -104,9 +103,9 @@ circbuff_init(&uart_rx_buff);
   while (1)
   {
 
-	  if(circbuff_read(&uart_rx_buff, &txByte)){
+	  if(circbuff_read(&uart_rx_buff, &rxByte)){
 
-		  HAL_UART_Transmit(&huart1, &txByte, 1, HAL_MAX_DELAY);
+		  HAL_UART_Transmit(&huart1, &rxByte, 1, HAL_MAX_DELAY);
 
 	  }
     /* USER CODE END WHILE */

@@ -1,7 +1,6 @@
 #include "circbuff.h"
 #include <string.h>
 
-//Initialise circular buffer
 void circbuff_init(CircularBuffer *circbuff){
 	circbuff->head = 0;
 	circbuff->tail = 0;

@@ -1,4 +1,4 @@
-17:58:33 **** Incremental Build of configuration Debug for project CircBuff ****
+18:24:35 **** Incremental Build of configuration Debug for project CircBuff ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "CircBuff.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Coding Files\C\Circular Buffer\CircularBuffer\CircBuff\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CircBuff.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -7,123 +7,27 @@ Finished building target: CircBuff.elf
 arm-none-eabi-size  CircBuff.elf 
 arm-none-eabi-objdump -h -S CircBuff.elf  > "CircBuff.list"
    text	   data	    bss	    dec	    hex	filename
-  12544	     12	   1716	  14272	   37c0	CircBuff.elf
+  12584	     12	   1708	  14304	   37e0	CircBuff.elf
 Finished building: default.size.stdout
  
 Finished building: CircBuff.list
  
-17:58:42 **** Incremental Build of configuration Debug for project CircBuff ****
-make -j8 all 
-arm-none-eabi-size  CircBuff.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12544	     12	   1716	  14272	   37c0	CircBuff.elf
-Finished building: default.size.stdout
- 
-18:02:59 **** Incremental Build of configuration Debug for project CircBuff ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "CircBuff.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Coding Files\C\Circular Buffer\CircularBuffer\CircBuff\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CircBuff.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: CircBuff.elf
- 
-arm-none-eabi-size  CircBuff.elf 
-arm-none-eabi-objdump -h -S CircBuff.elf  > "CircBuff.list"
-   text	   data	    bss	    dec	    hex	filename
-  12552	     12	   1716	  14280	   37c8	CircBuff.elf
-Finished building: default.size.stdout
- 
-Finished building: CircBuff.list
- 
-18:06:28 **** Incremental Build of configuration Debug for project CircBuff ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "CircBuff.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Coding Files\C\Circular Buffer\CircularBuffer\CircBuff\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CircBuff.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: CircBuff.elf
- 
-arm-none-eabi-size  CircBuff.elf 
-arm-none-eabi-objdump -h -S CircBuff.elf  > "CircBuff.list"
-   text	   data	    bss	    dec	    hex	filename
-  12632	     12	   1716	  14360	   3818	CircBuff.elf
-Finished building: default.size.stdout
- 
-Finished building: CircBuff.list
- 
-18:07:50 **** Incremental Build of configuration Debug for project CircBuff ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "CircBuff.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Coding Files\C\Circular Buffer\CircularBuffer\CircBuff\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CircBuff.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: CircBuff.elf
- 
-arm-none-eabi-size  CircBuff.elf 
-arm-none-eabi-objdump -h -S CircBuff.elf  > "CircBuff.list"
-   text	   data	    bss	    dec	    hex	filename
-  12544	     12	   1716	  14272	   37c0	CircBuff.elf
-Finished building: default.size.stdout
- 
-Finished building: CircBuff.list
- 
-18:09:58 **** Incremental Build of configuration Debug for project CircBuff ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "CircBuff.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Coding Files\C\Circular Buffer\CircularBuffer\CircBuff\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CircBuff.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: CircBuff.elf
- 
-arm-none-eabi-size  CircBuff.elf 
-arm-none-eabi-objdump -h -S CircBuff.elf  > "CircBuff.list"
-   text	   data	    bss	    dec	    hex	filename
-  12552	     12	   1716	  14280	   37c8	CircBuff.elf
-Finished building: default.size.stdout
- 
-Finished building: CircBuff.list
- 
-18:11:59 **** Incremental Build of configuration Debug for project CircBuff ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "CircBuff.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Coding Files\C\Circular Buffer\CircularBuffer\CircBuff\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CircBuff.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: CircBuff.elf
- 
-arm-none-eabi-size  CircBuff.elf 
-arm-none-eabi-objdump -h -S CircBuff.elf  > "CircBuff.list"
-   text	   data	    bss	    dec	    hex	filename
-  12624	     12	   1716	  14352	   3810	CircBuff.elf
-Finished building: default.size.stdout
- 
-Finished building: CircBuff.list
- 
-18:22:08 **** Incremental Build of configuration Debug for project CircBuff ****
+18:25:49 **** Incremental Build of configuration Debug for project CircBuff ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/circbuff.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/circbuff.d" -MT"Core/Src/circbuff.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/circbuff.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "CircBuff.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Coding Files\C\Circular Buffer\CircularBuffer\CircBuff\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CircBuff.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: CircBuff.elf
  
 arm-none-eabi-size  CircBuff.elf 
 arm-none-eabi-objdump -h -S CircBuff.elf  > "CircBuff.list"
    text	   data	    bss	    dec	    hex	filename
-  12552	     12	   1716	  14280	   37c8	CircBuff.elf
+  12596	     12	   1708	  14316	   37ec	CircBuff.elf
 Finished building: default.size.stdout
  
 Finished building: CircBuff.list
  
-18:25:19 **** Incremental Build of configuration Debug for project CircBuff ****
+18:32:29 **** Incremental Build of configuration Debug for project CircBuff ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/circbuff.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/circbuff.d" -MT"Core/Src/circbuff.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/circbuff.o"
-../Core/Src/circbuff.c: In function 'circbuff_read':
-../Core/Src/circbuff.c:40:9: warning: implicit declaration of function '__disable_irq' [-Wimplicit-function-declaration]
-   40 |         __disable_irq();
-      |         ^~~~~~~~~~~~~
-../Core/Src/circbuff.c:44:9: warning: implicit declaration of function '__enable_irq' [-Wimplicit-function-declaration]
-   44 |         __enable_irq();
-      |         ^~~~~~~~~~~~
-arm-none-eabi-gcc -o "CircBuff.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Coding Files\C\Circular Buffer\CircularBuffer\CircBuff\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CircBuff.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/circbuff.o: in function `circbuff_read':
-C:/Projects/Coding Files/C/Circular Buffer/CircularBuffer/CircBuff/Debug/../Core/Src/circbuff.c:40:(.text.circbuff_read+0x1a): undefined reference to `__disable_irq'
-C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Projects/Coding Files/C/Circular Buffer/CircularBuffer/CircBuff/Debug/../Core/Src/circbuff.c:44:(.text.circbuff_read+0x54): undefined reference to `__enable_irq'
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:64: CircBuff.elf] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-18:26:48 **** Incremental Build of configuration Debug for project CircBuff ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/circbuff.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/circbuff.d" -MT"Core/Src/circbuff.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/circbuff.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "CircBuff.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Coding Files\C\Circular Buffer\CircularBuffer\CircBuff\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CircBuff.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: CircBuff.elf
@@ -131,22 +35,21 @@ Finished building target: CircBuff.elf
 arm-none-eabi-size  CircBuff.elf 
 arm-none-eabi-objdump -h -S CircBuff.elf  > "CircBuff.list"
    text	   data	    bss	    dec	    hex	filename
-  12560	     12	   1716	  14288	   37d0	CircBuff.elf
+  12600	     12	   1716	  14328	   37f8	CircBuff.elf
 Finished building: default.size.stdout
  
 Finished building: CircBuff.list
  
-18:27:56 **** Incremental Build of configuration Debug for project CircBuff ****
+18:38:45 **** Incremental Build of configuration Debug for project CircBuff ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/circbuff.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/circbuff.d" -MT"Core/Src/circbuff.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/circbuff.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "CircBuff.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Projects\Coding Files\C\Circular Buffer\CircularBuffer\CircBuff\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CircBuff.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: CircBuff.elf
  
 arm-none-eabi-size  CircBuff.elf 
 arm-none-eabi-objdump -h -S CircBuff.elf  > "CircBuff.list"
    text	   data	    bss	    dec	    hex	filename
-  12572	     12	   1716	  14300	   37dc	CircBuff.elf
+  12576	     12	   1716	  14304	   37e0	CircBuff.elf
 Finished building: default.size.stdout
  
 Finished building: CircBuff.list
